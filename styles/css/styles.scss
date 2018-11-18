@@ -1,0 +1,121 @@
+//Fonts
+@font-face {
+  font-family: DINPro-Bold;
+  src: url("../fonts/DINPro Bold.otf");
+}
+
+@font-face {
+  font-family: DIN-Light;
+  src: url("../fonts/DIN-Light.ttf");
+}
+
+@font-face {
+  font-family: Playfair-Display-bold;
+  src: url("../fonts/PlayfairDisplay-Bold.otf");
+}
+
+@import "variables";
+
+body {
+
+  .red-border {
+    margin: 0 8px;
+    height: 7px;
+    position: relative;
+    bottom: 15px;
+    background-color: $reddish-color;
+    border: solid 1px rgba(255, 109, 134, 0.7);
+  }
+
+  .container {
+    max-width: 1280px;
+    padding: 0;
+  }
+
+  font-family: $font-din-light;
+  color: #282828;
+
+  .left-padding-206 {
+    padding-left: 206px;
+  }
+
+  .right-padding-100 {
+    padding-right: 100px;
+  }
+
+  .left-margin-206 {
+    margin-left: 206px;
+  }
+
+  // Header style starts here
+  header {
+    font-size: 16px;
+    color: #282828;
+
+    .navbar {
+      background-color: $white-clr;
+      border: solid 1px #ededed;
+      a {
+        color: #282828;
+        &:hover {
+          // TODO
+        }
+      }
+
+      .nav-consultation-link {
+        padding-right: 0;
+        font-family: $font-din-pro;
+      }
+    }
+
+    .bottom-border {
+      border: solid 0.5px #b9b9b9;
+    }
+
+    .header-bg {
+
+      background: url("../images/slide-photo2.png") 50% 85%;
+      height: 660px;
+
+      .header-content {
+        max-width: 635px;
+        padding: 150px 0 170px;
+        .header-text {
+
+          color: $white-clr;
+          font-family: $font-Playfair;
+          margin-bottom: 120px;
+
+          h1 {
+            font-size: 47px;
+            margin: 0;
+          }
+        }
+        .row {
+
+          .consultation-btn {
+            .btn {
+              font-size: 21px;
+              background-color: $reddish-color;
+              border: solid 1px rgba(184, 40, 64, 0.7);
+              border-radius: 0;
+              padding: 15px 13px;
+            }
+          }
+          .check-kits {
+            padding: 15px 13px;
+            .kits {
+              font-size: 21px;
+              color: $white-clr;
+              text-decoration: underline;
+            }
+          }
+
+        }
+      }
+    }
+  }
+  //  Header style ends here
+
+}
+
