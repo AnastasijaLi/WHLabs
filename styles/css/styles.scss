@@ -15,6 +15,7 @@
 }
 
 @import "variables";
+@import "scss/hover.scss";
 
 body {
 
@@ -39,12 +40,106 @@ body {
     padding-left: 206px;
   }
 
+  .left-padding-15px {
+    padding-left: 15px;
+  }
+
+  .top-padding-100 {
+    padding-top: 100px;
+  }
+
+  .top-padding-50 {
+    padding-top: 50px;
+  }
+
+  .bottom-padding-90 {
+    padding-bottom: 90px;
+  }
+
   .right-padding-100 {
     padding-right: 100px;
   }
 
+  .right-padding-165 {
+    padding-right: 165px;
+  }
+
   .left-margin-206 {
     margin-left: 206px;
+  }
+
+  .right-margin-25{
+    margin-right: 25px;
+  }
+
+  .top-margin-10 {
+    margin-top: 10px;
+  }
+
+  .top-margin-70 {
+    margin-top: 70px;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+
+  .heading {
+    font-family: $font-Playfair;
+    font-size: 46px;
+  }
+
+  .red-border-btn {
+    background-color: $white-clr;
+    color: $reddish-color;
+    border: solid 6px $reddish-color;
+    border-radius: 0;
+  }
+
+  .red-marker {
+    width: 240px;
+    height: 46px;
+    background-color: $reddish-color;
+    border: solid 1px rgba(255, 109, 134, 0.8);
+    position: relative;
+    top: 60px;
+    z-index: -1;
+  }
+
+  .font-size-25 {
+    font-size: 25px;
+  }
+
+  .font-size-18 {
+    font-size: 18px;
+  }
+
+
+  .bolded-font-size-25 {
+    font-size: 25px;
+    font-family: $font-din-pro;
+  }
+
+  .font-Playfair{
+  font-family: $font-Playfair;
+  }
+
+  .grey-clr {
+    color: $grey-color;
+  }
+
+  .width-calc{
+  max-width: calc(50% - 206px);
+  }
+
+  .max-width-60{
+    max-width: 60%;
+  }
+
+  .img-absolute-center{
+    left: 40%;
+    top: 50%;
+    Transform: translate(-50%, -50%);
   }
 
   // Header style starts here
@@ -116,6 +211,47 @@ body {
     }
   }
   //  Header style ends here
+
+  // What we do section starts here
+
+  .what-we-do-sec {
+
+    .what-we-do-sec-text-2 {
+      font-size: 23px;
+    }
+
+    .logos-section {
+      display: inline-flex;
+      text-align: center;
+
+    }
+  }
+
+  .web-design-section {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding-bottom: 30px;
+      max-width: 90%;
+    }
+
+    ul li::before {
+      content: "\25AA";
+      color: $reddish-color;
+      font-weight: bold;
+      display: inline-block;
+      width: 22px;
+      font-size: 35px;
+
+    }
+
+    .btn-lg{
+      padding: 16px 26px;
+    }
+  }
 
 }
 
