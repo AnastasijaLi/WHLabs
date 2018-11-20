@@ -17,6 +17,10 @@
 @import "variables";
 @import "scss/hover.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 
   .red-border {
@@ -43,6 +47,11 @@ body {
   .left-padding-15px {
     padding-left: 15px;
   }
+
+  .left-padding-5 {
+    padding-left: 5px;
+  }
+
 
   .top-padding-50 {
     padding-top: 50px;
@@ -144,6 +153,10 @@ body {
 
   .max-width-60 {
     max-width: 60%;
+  }
+
+  .max-width-65 {
+    max-width: 65%;
   }
 
   .max-width-55 {
@@ -265,7 +278,7 @@ body {
     }
 
     .btn-lg {
-      padding: 16px 26px;
+      padding: 12px 25.5px;
     }
   }
   // Web design section ends
@@ -308,5 +321,53 @@ body {
     }
   }
   // Analyze section ends
+
+  //Sales & marketing section starts
+
+  #sales-marketing-section {
+    .red-marker {
+      width: 185px;
+    }
+  }
+
+  #img-2 {
+    top: 45%;
+    left: 60%;
+  }
+
+  #list-2 {
+    width: 485px;
+  }
+
+  #from-700 {
+    padding-right: 32px;
+  }
+
+  .form-style-2 {
+    height: 83px;
+    width: 430px;
+    border-radius: 0;
+    background-color: #f0f0f0;
+    color: #282828;
+
+  }
+
+  .form-btn-style-2 {
+    background-color: $reddish-color;
+    border-color: $reddish-color;
+    width: 430px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  #comment {
+    height: 173px;
+    width: 430px;
+  }
+
+  .noresize {
+    resize: none;
+  }
+
 }
 

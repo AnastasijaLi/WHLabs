@@ -3524,6 +3524,9 @@
     width: 25px;
     height: 25px; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: DIN-Light, sans-serif;
   color: #282828; }
@@ -3541,6 +3544,8 @@ body {
     padding-left: 206px; }
   body .left-padding-15px {
     padding-left: 15px; }
+  body .left-padding-5 {
+    padding-left: 5px; }
   body .top-padding-50 {
     padding-top: 50px; }
   body .top-padding-100 {
@@ -3598,6 +3603,8 @@ body {
     max-width: calc(50% - 206px); }
   body .max-width-60 {
     max-width: 60%; }
+  body .max-width-65 {
+    max-width: 65%; }
   body .max-width-55 {
     max-width: 55%; }
   body .img-absolute-center {
@@ -3661,7 +3668,7 @@ body {
     width: 22px;
     font-size: 35px; }
   body .web-design-section .btn-lg {
-    padding: 16px 26px; }
+    padding: 12px 25.5px; }
   body .analyze-sec {
     height: 656px;
     background-color: #282828; }
@@ -3686,5 +3693,31 @@ body {
       max-width: 100%;
       padding-left: 28px;
       padding-right: 28px; }
+  body #sales-marketing-section .red-marker {
+    width: 185px; }
+  body #img-2 {
+    top: 45%;
+    left: 60%; }
+  body #list-2 {
+    width: 485px; }
+  body #from-700 {
+    padding-right: 32px; }
+  body .form-style-2 {
+    height: 83px;
+    width: 430px;
+    border-radius: 0;
+    background-color: #f0f0f0;
+    color: #282828; }
+  body .form-btn-style-2 {
+    background-color: #ff2c4f;
+    border-color: #ff2c4f;
+    width: 430px;
+    padding-left: 28px;
+    padding-right: 28px; }
+  body #comment {
+    height: 173px;
+    width: 430px; }
+  body .noresize {
+    resize: none; }
 
 /*# sourceMappingURL=styles.css.map */
