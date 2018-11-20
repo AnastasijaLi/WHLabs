@@ -3540,12 +3540,18 @@ body {
   body .container {
     max-width: 1280px;
     padding: 0; }
+  body .height-726 {
+    height: 728px !important; }
   body .left-padding-206 {
     padding-left: 206px; }
-  body .left-padding-15px {
-    padding-left: 15px; }
+  body .left-padding-30 {
+    padding-left: 30px; }
+  body .left-padding-55 {
+    padding-left: 55px; }
   body .left-padding-5 {
     padding-left: 5px; }
+  body .top-padding-6 {
+    padding-top: 6px; }
   body .top-padding-50 {
     padding-top: 50px; }
   body .top-padding-100 {
@@ -3554,6 +3560,10 @@ body {
     padding-top: 150px; }
   body .bottom-padding-90 {
     padding-bottom: 90px; }
+  body .bottom-padding-160 {
+    padding-bottom: 160px; }
+  body .right-padding-55 {
+    padding-right: 55px; }
   body .right-padding-100 {
     padding-right: 100px; }
   body .right-padding-165 {
@@ -3584,14 +3594,21 @@ body {
     position: relative;
     top: 60px;
     z-index: -1; }
+  body .font-size-23 {
+    font-size: 23px; }
   body .font-size-25 {
     font-size: 25px; }
   body .font-size-28 {
     font-size: 28px; }
   body .font-size-18 {
     font-size: 18px; }
+  body .font-size-61 {
+    font-size: 61px; }
   body .bolded-font-size-25 {
     font-size: 25px;
+    font-family: DINPro-Bold, sans-serif; }
+  body .bolded-font-size-30 {
+    font-size: 30px;
     font-family: DINPro-Bold, sans-serif; }
   body .font-Playfair {
     font-family: Playfair-Display-bold, serif; }
@@ -3599,12 +3616,20 @@ body {
     color: #ababab; }
   body .grey-clr-2 {
     color: #e0e0e0; }
+  body .grey-clr-3 {
+    color: #a2a2a2; }
+  body .grey-clr-4 {
+    color: #c9c9c9; }
   body .width-calc {
     max-width: calc(50% - 206px); }
   body .max-width-60 {
     max-width: 60%; }
   body .max-width-65 {
     max-width: 65%; }
+  body .max-width-80 {
+    max-width: 80%; }
+  body .max-width-90 {
+    max-width: 90%; }
   body .max-width-55 {
     max-width: 55%; }
   body .img-absolute-center {
@@ -3669,25 +3694,25 @@ body {
     font-size: 35px; }
   body .web-design-section .btn-lg {
     padding: 12px 25.5px; }
-  body .analyze-sec {
+  body .dark-bg {
     height: 656px;
     background-color: #282828; }
-    body .analyze-sec .input-link {
+    body .dark-bg .input-link {
       width: 461px;
       border-left: solid 1px #eaeaea;
       border-right: solid 1px #eaeaea; }
-    body .analyze-sec .max-width-185 {
+    body .dark-bg .max-width-185 {
       max-width: 185px; }
-    body .analyze-sec .input-sum {
+    body .dark-bg .input-sum {
       width: 170px;
       border-left: solid 1px #eaeaea;
       border-right: solid 1px #eaeaea; }
-    body .analyze-sec .form-style {
+    body .dark-bg .form-style {
       height: 78px;
       border-radius: 0;
       background-color: #f0f0f0;
       color: #282828; }
-    body .analyze-sec .form-btn-style {
+    body .dark-bg .form-btn-style {
       background-color: #ff2c4f;
       border-color: #ff2c4f;
       max-width: 100%;
@@ -3706,6 +3731,7 @@ body {
     height: 83px;
     width: 430px;
     border-radius: 0;
+    border: none;
     background-color: #f0f0f0;
     color: #282828; }
   body .form-btn-style-2 {
@@ -3715,9 +3741,27 @@ body {
     padding-left: 28px;
     padding-right: 28px; }
   body #comment {
-    height: 173px;
+    height: 172px;
     width: 430px; }
   body .noresize {
     resize: none; }
+  body .consultation-sec ul li {
+    list-style-type: none; }
+  body .download-btn {
+    font-size: 25px;
+    background-color: #ff2c4f;
+    border: solid 1px rgba(184, 40, 64, 0.7);
+    border-radius: 0;
+    padding: 13px 57px; }
+  body .consult-link {
+    font-size: 19px;
+    color: #fff;
+    text-decoration: underline; }
+  body .position-btn {
+    left: 25%;
+    top: 90%;
+    Transform: translate(-50%, -50%); }
+  body .lab-resources-sec .red-marker {
+    width: 300px; }
 
 /*# sourceMappingURL=styles.css.map */
