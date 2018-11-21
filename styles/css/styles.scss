@@ -44,8 +44,16 @@ body {
     height: 728px !important;
   }
 
+  .height-782 {
+    height: 782px !important;
+  }
+
   .left-padding-206 {
     padding-left: 206px;
+  }
+
+  .left-padding-160 {
+    padding-left: 160px;
   }
 
   .left-padding-30 {
@@ -78,6 +86,10 @@ body {
 
   .bottom-padding-90 {
     padding-bottom: 90px;
+  }
+
+  .bottom-padding-150 {
+    padding-bottom: 150px;
   }
 
   .bottom-padding-160 {
@@ -132,9 +144,18 @@ body {
     width: 240px;
     height: 46px;
     background-color: $reddish-color;
-    border: solid 1px rgba(255, 109, 134, 0.8);
+    border: solid 1px #b8253d;
     position: relative;
     top: 60px;
+    z-index: -1;
+  }
+
+  .grey-marker {
+    width: 228px;
+    height: 14px;
+    background-color: #dddddd;
+    border: solid 1px #e7e7e7;
+    position: relative;
     z-index: -1;
   }
 
@@ -156,6 +177,10 @@ body {
 
   .font-size-61 {
     font-size: 61px;
+  }
+
+  .font-dinpro {
+    font-family: $font-din-pro;
   }
 
   .bolded-font-size-25 {
@@ -218,6 +243,18 @@ body {
     Transform: translate(-50%, -50%);
   }
 
+  .z-ind-1 {
+    z-index: 1;
+  }
+
+  .btn-primary:hover {
+    background-color: white;
+  }
+
+  .red-border-btn:hover {
+    border-color: $reddish-color;
+  }
+
   // Header style starts here
   header {
     font-size: 16px;
@@ -226,16 +263,32 @@ body {
     .navbar {
       background-color: $white-clr;
       border: solid 1px #ededed;
-      a {
-        color: #282828;
-        &:hover {
-          // TODO
+
+      .nav-item {
+        height: 47px;
+        .red-border {
+          transition: height 0.2s ease;
+          height: 0;
+          border: none;
         }
+        a {
+          color: #282828;
+        }
+
+        &:hover > .red-border {
+          display: block;
+          height: 7px;
+          border: solid 1px rgba(255, 109, 134, 0.7);
+        }
+        &:hover > a {
+          font-family: $font-din-pro;
+          text-transform: uppercase;
+        }
+
       }
 
       .nav-consultation-link {
         padding-right: 0;
-        font-family: $font-din-pro;
       }
     }
 
@@ -265,12 +318,27 @@ body {
         .row {
 
           .consultation-btn {
+
+            .hvr-sweep-to-right {
+              &:before {
+                background: $white-clr;
+              }
+              &:hover,
+              &:focus,
+              &:active {
+                color: $reddish-color;
+              }
+            }
+
             .btn {
               font-size: 21px;
               background-color: $reddish-color;
               border: solid 1px rgba(184, 40, 64, 0.7);
               border-radius: 0;
               padding: 15px 13px;
+              &:focus {
+                box-shadow: 0 0 0 0.1rem $white-clr;
+              }
             }
           }
           .check-kits {
@@ -301,6 +369,16 @@ body {
       text-align: center;
 
     }
+    .hvr-sweep-to-left {
+      &:before {
+        background: $reddish-color;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+      }
+    }
   }
   // What we do section ends here
 
@@ -328,6 +406,18 @@ body {
 
     .btn-lg {
       padding: 12px 25.5px;
+    }
+
+    .hvr-sweep-to-left {
+      &:before {
+        background: $reddish-color;
+
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+      }
     }
   }
   // Web design section ends
@@ -368,6 +458,16 @@ body {
       padding-left: 28px;
       padding-right: 28px;
     }
+    .hvr-sweep-to-right {
+      &:before {
+        background: $white-clr;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $reddish-color !important;
+      }
+    }
   }
   // Analyze section ends
 
@@ -377,79 +477,231 @@ body {
     .red-marker {
       width: 185px;
     }
+
+    #img-2 {
+      top: 45%;
+      left: 60%;
+    }
+
+    #list-2 {
+      width: 485px;
+    }
+
+    #from-700 {
+      padding-right: 32px;
+    }
+
+    .hvr-sweep-to-left {
+      &:before {
+        background: $reddish-color;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+      }
+    }
   }
+  //Sales & marketing section ends
 
-  #img-2 {
-    top: 45%;
-    left: 60%;
-  }
-
-  #list-2 {
-    width: 485px;
-  }
-
-  #from-700 {
-    padding-right: 32px;
-  }
-
-  .form-style-2 {
-    height: 83px;
-    width: 430px;
-    border-radius: 0;
-    border: none;
-    background-color: #f0f0f0;
-    color: #282828;
-
-  }
-
-  .form-btn-style-2 {
-    background-color: $reddish-color;
-    border-color: $reddish-color;
-    width: 430px;
-    padding-left: 28px;
-    padding-right: 28px;
-  }
-
-  #comment {
-    height: 172px;
-    width: 430px;
-  }
-
-  .noresize {
-    resize: none;
-  }
-
+  // Consultation section starts
   .consultation-sec {
     ul li {
       list-style-type: none;
     }
-  }
 
-  .download-btn {
-    font-size: 25px;
-    background-color: $reddish-color;
-    border: solid 1px rgba(184, 40, 64, 0.7);
-    border-radius: 0;
-    padding: 13px 57px;;
-  }
+    .form-style-2 {
+      height: 83px;
+      width: 430px;
+      border-radius: 0;
+      border: none;
+      background-color: #f0f0f0;
+      color: #282828;
 
-  .consult-link {
-    font-size: 19px;
-    color: $white-clr;
-    text-decoration: underline;
-  }
+    }
 
-  .position-btn {
-    left: 25%;
-    top: 90%;
-    Transform: translate(-50%, -50%);
-  }
+    .form-btn-style-2 {
+      background-color: $reddish-color;
+      border-color: $reddish-color;
+      width: 430px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
 
+    #comment {
+      height: 172px;
+      width: 430px;
+    }
+
+    .noresize {
+      resize: none;
+    }
+
+    .hvr-sweep-to-right {
+      &:before {
+        background: $white-clr;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $reddish-color !important;
+        border: solid 1px $reddish-color;
+      }
+    }
+  }
+  // Consultation section ends
+
+  // Downloadable section starts
+  .download-sec {
+    .download-btn {
+      font-size: 25px;
+      background-color: $reddish-color;
+      border: solid 1px rgba(184, 40, 64, 0.7);
+      border-radius: 0;
+      padding: 16px 20px;
+    }
+    .hvr-sweep-to-right {
+      &:before {
+        background: $white-clr;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $reddish-color !important;
+      }
+    }
+
+    .consult-link {
+      font-size: 19px;
+      color: $white-clr;
+      text-decoration: underline;
+    }
+
+    .position-btn {
+      left: 25%;
+      top: 90%;
+      Transform: translate(-50%, -50%);
+    }
+  }
+  // Downloadable section ends
+
+  // Learning Lab & resources section starts
   .lab-resources-sec {
     .red-marker {
       width: 300px;
     }
+
+    .left-padding-160 {
+      &.top-padding-100 {
+        .row {
+          max-width: 1000px;
+        }
+      }
+    }
+
+    .img-padd-right {
+      padding-right: 1px;
+    }
+
+    .img-padd-left {
+      padding-left: 1px;
+    }
+
+    .text-positioning {
+      text-align: left;
+      padding: 30px 50px 0 50px;
+    }
+
+    .text-positioning-2 {
+      text-align: left;
+      padding: 30px 30px 0 30px;
+    }
+
+    .marker-left {
+      .grey-marker {
+        top: -76px;
+        left: 50px;
+      }
+    }
+
+    .marker-right {
+      .grey-marker {
+        top: -76px;
+        left: 32px;
+      }
+    }
+
+    .with-marker {
+      .grey-marker {
+        top: 39px;
+      }
+    }
+
+    .load-more-btn {
+      text-align: center;
+      .btn {
+        font-size: 23px !important;
+
+      }
+    }
+  }
+  // Learning Lab & resources section ends
+
+  // Rocket science section starts
+  .rocket-science-sec {
+
+    background: #141414 url("../images/Black & White 2.png") no-repeat right;
+
+    .red-marker {
+      width: 441px;
+      height: 18px;
+      background-color: #ff2c4f;
+      border: solid 1px #b8253d;
+      position: relative;
+      top: 195px;
+      z-index: -1;
+    }
+
+    .download-btn {
+      font-size: 25px;
+      background-color: $reddish-color;
+      border: solid 1px rgba(184, 40, 64, 0.7);
+      border-radius: 0;
+      padding: 16px 20px;
+    }
+    .hvr-sweep-to-right {
+      &:before {
+        background: $white-clr;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: $reddish-color !important;
+      }
+    }
+  }
+  // Rocket science section ends
+
+  // Footer section starts
+  a.email {
+    color: #000;
+    font-size: 36px;
   }
 
+  .footer-sec {
+    padding-bottom: 120px;
+  }
+
+  footer {
+    height: 100px;
+    background-color: #f8f8f8;
+    color: #8e8e8e;
+
+    p {
+      top: 50%;
+      Transform: translate(0, -50%);
+    }
+  }
+  // Footer section ends
 }
 
