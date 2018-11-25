@@ -14,11 +14,16 @@
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!--Html shiv-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <title></title>
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
     <!--Header starts here-->
     <header>
 
@@ -35,19 +40,15 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#what-we-do">What we do</a>
-                        <div class="red-border"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#service-kits">Service Kits</a>
-                        <div class="red-border"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Our Work</a>
-                        <div class="red-border"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Learn Lab</a>
-                        <div class="red-border"></div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-consultation-link" href="#">Book free consultation</a>
@@ -62,6 +63,7 @@
 
         <!--Header content starts here-->
         <div class="header-bg">
+            <div class="container">
             <div class="header-content left-margin-206">
                 <div class="header-text">
                     <h1>Helping Live Event And Conference Business Grow Online</h1>
@@ -79,11 +81,13 @@
                 </div>
             </div>
         </div>
+        </div>
     </header>
     <!--Header content ends here-->
     <!--Header ends here-->
 
     <!--What we do section starts here-->
+    <div class="container">
     <div class="what-we-do-sec top-padding-100" id="what-we-do">
         <div class="row">
             <div class="col-md-10 left-margin-206">
@@ -123,10 +127,12 @@
 
         </div>
     </div>
+    </div>
     <!--What we do section ends here-->
 
 
     <!--Web design section starts here-->
+    <div class="container">
     <div class="top-padding-100 web-design-section" id="service-kits">
         <div class="row top-padding-100">
             <div class="col-md-6 left-margin-206">
@@ -202,12 +208,13 @@
         </div>
 
     </div>
-
+    </div>
     <!--Web design section ends here-->
 
 
     <!--Analyze section starts-->
     <div class="dark-bg">
+        <div class="container">
         <div class="left-padding-206 top-padding-150">
             <p class="heading max-width-55 text-white">Have Website But Don’t Know Where To Start?</p>
             <p class="font-size-25 grey-clr-2 top-padding-50">FREE: Analyze Tool For Better Performance Of Your
@@ -236,11 +243,12 @@
                 <!--Form ends-->
             </div>
         </div>
+        </div>
     </div>
     <!--Analyze section ends-->
 
     <!--Sales & marketing section starts-->
-
+    <div class="container">
     <div class="top-padding-100 web-design-section" id="sales-marketing-section">
         <div class="row top-padding-100">
 
@@ -276,13 +284,14 @@
                 SERVICE KIT
             </button>
         </div>
-
+    </div>
     </div>
 
     <!--Sales & marketing section ends-->
 
 
     <!--Consultation section starts-->
+    <div class="container">
     <div class="consultation-sec left-padding-206 top-padding-150">
         <p class="heading max-width-65 m-0">Free Consultation</p>
         <div class="row">
@@ -354,10 +363,12 @@
             </div>
         </div>
     </div>
+    </div>
     <!--Consultation section ends-->
 
     <!--Downloadable section starts-->
     <div class="height-726 dark-bg download-sec">
+        <div class="container">
         <div class="row">
             <div class="col-md-8 left-padding-206 top-padding-150">
                 <p class="font-size-23 grey-clr-3">RESOURCE OF THE MONTH</p>
@@ -383,13 +394,12 @@
             </div>
         </div>
     </div>
+    </div>
     <!--Downloadable section ends-->
 
     <!--Learning Lab & resources section starts-->
-
-    <!--TODO-->
+    <div class="container">
     <div class="top-padding-100 lab-resources-sec">
-
 
         <div class="row">
             <div class="col-md-8 left-padding-206">
@@ -466,17 +476,18 @@
             </button>
         </div>
     </div>
+    </div>
     <!--Learning Lab & resources section ends-->
 
 
     <!--Rocket science section starts-->
 
     <div class="height-782 top-padding-100 left-padding-206 rocket-science-sec">
-
+        <div class="container">
         <div class="row">
             <div class="col-md-8 z-ind-1">
                 <div class="red-marker"></div>
-                <p class="font-size-61 heading max-width-80 text-white pt-4">Sounds Like A Rocket Science? </p>
+                <p class="font-size-61 heading max-width-60 text-white pt-4">Sounds Like A Rocket Science? </p>
             </div>
 
 
@@ -495,11 +506,12 @@
             </div>
         </div>
     </div>
-
+    </div>
     <!--Rocket science section ends-->
 
 
     <!--Footer & contact section starts-->
+    <div class="container">
 
     <div class="row left-padding-206 top-padding-150 footer-sec">
 
@@ -543,12 +555,13 @@
     </div>
 
     <div class="clear-fix"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
 
-    <div class="row align-middle align-items-center">
-        <div class="col-md-12 align-middle align-items-center">
-            <footer class="left-padding-206 align-middle align-items-center position-relative">
+            <footer class="left-padding-206 position-relative">
 
-                <p class="font-size-25 align-middle align-items-center position-absolute">Copyright @ 2018. All rights
+                <p class="font-size-25 position-absolute">Copyright @ 2018. All rights
                     reserved</p>
 
             </footer>

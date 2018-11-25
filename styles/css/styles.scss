@@ -144,7 +144,6 @@ body {
     width: 240px;
     height: 46px;
     background-color: $reddish-color;
-    border: solid 1px #b8253d;
     position: relative;
     top: 60px;
     z-index: -1;
@@ -199,6 +198,10 @@ body {
 
   .grey-clr {
     color: $grey-color;
+  }
+
+  .btn{
+    font-weight: bold;
   }
 
   .grey-clr-2 {
@@ -263,32 +266,36 @@ body {
     .navbar {
       background-color: $white-clr;
       border: solid 1px #ededed;
+      border-left: none;
+      border-right: none;
+      text-transform: uppercase;
 
       .nav-item {
         height: 47px;
-        .red-border {
-          transition: height 0.2s ease;
-          height: 0;
-          border: none;
-        }
+        //.red-border {
+        //  transition: height 0.2s ease;
+        //  height: 0;
+        //  border: none;
+        //}
         a {
           color: #282828;
         }
 
-        &:hover > .red-border {
-          display: block;
-          height: 7px;
-          border: solid 1px rgba(255, 109, 134, 0.7);
-        }
-        &:hover > a {
-          font-family: $font-din-pro;
-          text-transform: uppercase;
-        }
+        //&:hover > .red-border {
+        //  display: block;
+        //  height: 7px;
+        //  border: solid 1px rgba(255, 109, 134, 0.7);
+        //}
+        //&:hover > a {
+        //  font-family: $font-din-pro;
+        //  text-transform: uppercase;
+        //}
 
       }
 
       .nav-consultation-link {
         padding-right: 0;
+        font-family: $font-din-pro;
       }
     }
 
@@ -298,7 +305,8 @@ body {
 
     .header-bg {
 
-      background: url("../images/slide-photo2.png") 50% 85%;
+      background: url("../images/slide-photo2.png") no-repeat ;
+      background-size: cover;
       height: 660px;
 
       .header-content {
@@ -656,7 +664,6 @@ body {
       width: 441px;
       height: 18px;
       background-color: #ff2c4f;
-      border: solid 1px #b8253d;
       position: relative;
       top: 195px;
       z-index: -1;
