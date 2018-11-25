@@ -3708,15 +3708,18 @@ body {
             font-size: 21px;
             color: #fff;
             text-decoration: underline; }
-  body .what-we-do-sec .what-we-do-sec-text-2 {
-    font-size: 23px; }
-  body .what-we-do-sec .logos-section {
-    display: inline-flex;
-    text-align: center; }
-  body .what-we-do-sec .hvr-sweep-to-left:before {
-    background: #ff2c4f; }
-  body .what-we-do-sec .hvr-sweep-to-left:hover, body .what-we-do-sec .hvr-sweep-to-left:focus, body .what-we-do-sec .hvr-sweep-to-left:active {
-    color: white; }
+  body .what-we-do-sec {
+    background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0% 71%;
+    background-size: auto; }
+    body .what-we-do-sec .what-we-do-sec-text-2 {
+      font-size: 23px; }
+    body .what-we-do-sec .logos-section {
+      display: inline-flex;
+      text-align: center; }
+    body .what-we-do-sec .hvr-sweep-to-left:before {
+      background: #ff2c4f; }
+    body .what-we-do-sec .hvr-sweep-to-left:hover, body .what-we-do-sec .hvr-sweep-to-left:focus, body .what-we-do-sec .hvr-sweep-to-left:active {
+      color: white; }
   body .web-design-section ul {
     list-style: none;
     padding: 0; }
