@@ -1,18 +1,43 @@
 //Fonts
 @font-face {
-  font-family: DINPro-Bold;
-  src: url("../fonts/DINPro Bold.otf");
+  font-family: 'DIN';
+  src: url('../fonts/DIN-Light.woff2') format('woff2'),
+  url('../fonts/DIN-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: DIN-Light;
-  src: url("../fonts/DIN-Light.ttf");
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+  url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Playfair-Display-bold;
-  src: url("../fonts/PlayfairDisplay-Bold.otf");
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
+  url('../fonts/DINPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
+
+
+//@font-face {
+//  font-family: DINPro-Bold;
+//  src: url("../fonts/DINPro Bold.otf");
+//}
+//
+//@font-face {
+//  font-family: DIN-Light;
+//  src: url("../fonts/DIN-Light.ttf");
+//}
+//
+//@font-face {
+//  font-family: Playfair-Display-bold;
+//  src: url("../fonts/PlayfairDisplay-Bold.otf");
+//}
 
 @import "variables";
 @import "scss/hover.scss";
@@ -38,6 +63,7 @@ body {
   }
 
   font-family: $font-din-light;
+  //font-family: "Times New Roman", Times, serif;
   color: #282828;
 
   .height-726 {
@@ -116,8 +142,19 @@ body {
     margin-right: 25px;
   }
 
+ .right-margin-30{
+   margin-right: 30%;
+ }
+  .bottom-margin-50{
+    margin-bottom: 50px;
+  }
+
   .top-margin-10 {
     margin-top: 10px;
+  }
+
+  .top-margin-55{
+    margin-top: 55px;
   }
 
   .top-margin-70 {
@@ -129,23 +166,26 @@ body {
   }
 
   .heading {
-    font-family: $font-Playfair;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: normal;
     font-size: 46px;
+    line-height: 3.5rem;
   }
 
   .red-border-btn {
     background-color: $white-clr;
     color: $reddish-color;
-    border: solid 6px $reddish-color;
+    border: solid 5px $reddish-color;
     border-radius: 0;
   }
 
   .red-marker {
-    width: 240px;
+    width: 236px;
     height: 46px;
-    background-color: $reddish-color;
+    background-color: #ff2c4f;
     position: relative;
-    top: 60px;
+    top: 47px;
     z-index: -1;
   }
 
@@ -179,17 +219,23 @@ body {
   }
 
   .font-dinpro {
-    font-family: $font-din-pro;
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-style: normal;
   }
 
   .bolded-font-size-25 {
     font-size: 25px;
-    font-family: $font-din-pro;
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-style: normal;
   }
 
   .bolded-font-size-30 {
     font-size: 30px;
-    font-family: $font-din-pro;
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-style: normal;
   }
 
   .font-Playfair {
@@ -295,7 +341,9 @@ body {
 
       .nav-consultation-link {
         padding-right: 0;
-        font-family: $font-din-pro;
+        font-family: 'DINPro-Bold',sans-serif;
+        font-weight: bold;
+        //font-family: "Times New Roman", Times, serif;
       }
     }
 
@@ -319,8 +367,10 @@ body {
           margin-bottom: 120px;
 
           h1 {
+            font-weight: bold;
             font-size: 47px;
             margin: 0;
+            line-height: 3.5rem;
           }
         }
         .row {
@@ -367,7 +417,7 @@ body {
   // What we do section starts here
 
   .what-we-do-sec {
-    background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0% 71%;
+    background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0 60%;
     background-size: auto;
 
     .what-we-do-sec-text-2 {
@@ -454,7 +504,7 @@ body {
     }
 
     .form-style {
-      height: 78px;
+      height: 65px;
       border-radius: 0;
       background-color: #f0f0f0;
       color: #282828;
@@ -521,7 +571,7 @@ body {
     }
 
     .form-style-2 {
-      height: 83px;
+      height: 65px;
       width: 430px;
       border-radius: 0;
       border: none;
@@ -539,7 +589,7 @@ body {
     }
 
     #comment {
-      height: 172px;
+      height: 136px;
       width: 430px;
     }
 
@@ -663,11 +713,11 @@ body {
     background: #141414 url("../images/Black & White 2.png") no-repeat right;
 
     .red-marker {
-      width: 441px;
+      width: 440px;
       height: 18px;
       background-color: #ff2c4f;
       position: relative;
-      top: 195px;
+      top: 80%;
       z-index: -1;
     }
 

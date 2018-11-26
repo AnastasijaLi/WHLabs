@@ -1,12 +1,18 @@
 @font-face {
-  font-family: DINPro-Bold;
-  src: url("../fonts/DINPro Bold.otf"); }
+  font-family: 'DIN';
+  src: url("../fonts/DIN-Light.woff2") format("woff2"), url("../fonts/DIN-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
 @font-face {
-  font-family: DIN-Light;
-  src: url("../fonts/DIN-Light.ttf"); }
+  font-family: 'Playfair Display';
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 @font-face {
-  font-family: Playfair-Display-bold;
-  src: url("../fonts/PlayfairDisplay-Bold.otf"); }
+  font-family: 'DINPro';
+  src: url("../fonts/DINPro-Bold.woff2") format("woff2"), url("../fonts/DINPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
  * Version: 2.3.2
@@ -3528,7 +3534,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: DIN-Light, sans-serif;
+  font-family: "DIN";
   color: #282828; }
   body .red-border {
     margin: 0 8px;
@@ -3578,26 +3584,35 @@ body {
     margin-left: 206px; }
   body .right-margin-25 {
     margin-right: 25px; }
+  body .right-margin-30 {
+    margin-right: 30%; }
+  body .bottom-margin-50 {
+    margin-bottom: 50px; }
   body .top-margin-10 {
     margin-top: 10px; }
+  body .top-margin-55 {
+    margin-top: 55px; }
   body .top-margin-70 {
     margin-top: 70px; }
   body .title {
     font-size: 21px; }
   body .heading {
-    font-family: Playfair-Display-bold, serif;
-    font-size: 46px; }
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 46px;
+    line-height: 3.5rem; }
   body .red-border-btn {
     background-color: #fff;
     color: #ff2c4f;
-    border: solid 6px #ff2c4f;
+    border: solid 5px #ff2c4f;
     border-radius: 0; }
   body .red-marker {
-    width: 240px;
+    width: 236px;
     height: 46px;
     background-color: #ff2c4f;
     position: relative;
-    top: 60px;
+    top: 47px;
     z-index: -1; }
   body .grey-marker {
     width: 228px;
@@ -3617,15 +3632,21 @@ body {
   body .font-size-61 {
     font-size: 61px; }
   body .font-dinpro {
-    font-family: DINPro-Bold, sans-serif; }
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-style: normal; }
   body .bolded-font-size-25 {
     font-size: 25px;
-    font-family: DINPro-Bold, sans-serif; }
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-style: normal; }
   body .bolded-font-size-30 {
     font-size: 30px;
-    font-family: DINPro-Bold, sans-serif; }
+    font-family: 'DINPro';
+    font-weight: bold;
+    font-style: normal; }
   body .font-Playfair {
-    font-family: Playfair-Display-bold, serif; }
+    font-family: "Playfair Display"; }
   body .grey-clr {
     color: #ababab; }
   body .btn {
@@ -3673,7 +3694,8 @@ body {
           color: #282828; }
       body header .navbar .nav-consultation-link {
         padding-right: 0;
-        font-family: DINPro-Bold, sans-serif; }
+        font-family: 'DINPro-Bold',sans-serif;
+        font-weight: bold; }
     body header .bottom-border {
       border: solid 0.5px #b9b9b9; }
     body header .header-bg {
@@ -3685,11 +3707,13 @@ body {
         padding: 150px 0 170px; }
         body header .header-bg .header-content .header-text {
           color: #fff;
-          font-family: Playfair-Display-bold, serif;
+          font-family: "Playfair Display";
           margin-bottom: 120px; }
           body header .header-bg .header-content .header-text h1 {
+            font-weight: bold;
             font-size: 47px;
-            margin: 0; }
+            margin: 0;
+            line-height: 3.5rem; }
         body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:before {
           background: #fff; }
         body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:hover, body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:focus, body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:active {
@@ -3709,7 +3733,7 @@ body {
             color: #fff;
             text-decoration: underline; }
   body .what-we-do-sec {
-    background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0% 71%;
+    background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0 60%;
     background-size: auto; }
     body .what-we-do-sec .what-we-do-sec-text-2 {
       font-size: 23px; }
@@ -3753,7 +3777,7 @@ body {
       border-left: solid 1px #eaeaea;
       border-right: solid 1px #eaeaea; }
     body .dark-bg .form-style {
-      height: 78px;
+      height: 65px;
       border-radius: 0;
       background-color: #f0f0f0;
       color: #282828; }
@@ -3783,7 +3807,7 @@ body {
   body .consultation-sec ul li {
     list-style-type: none; }
   body .consultation-sec .form-style-2 {
-    height: 83px;
+    height: 65px;
     width: 430px;
     border-radius: 0;
     border: none;
@@ -3796,7 +3820,7 @@ body {
     padding-left: 28px;
     padding-right: 28px; }
   body .consultation-sec #comment {
-    height: 172px;
+    height: 136px;
     width: 430px; }
   body .consultation-sec .noresize {
     resize: none; }
@@ -3852,11 +3876,11 @@ body {
   body .rocket-science-sec {
     background: #141414 url("../images/Black & White 2.png") no-repeat right; }
     body .rocket-science-sec .red-marker {
-      width: 441px;
+      width: 440px;
       height: 18px;
       background-color: #ff2c4f;
       position: relative;
-      top: 195px;
+      top: 80%;
       z-index: -1; }
     body .rocket-science-sec .download-btn {
       font-size: 25px;
