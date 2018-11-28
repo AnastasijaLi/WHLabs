@@ -3534,6 +3534,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  overflow-x: hidden;
   font-family: "DIN";
   color: #282828; }
   body .red-border {
@@ -3621,6 +3622,8 @@ body {
     border: solid 1px #e7e7e7;
     position: relative;
     z-index: -1; }
+  body .font-size-20 {
+    font-size: 20px; }
   body .font-size-23 {
     font-size: 23px; }
   body .font-size-25 {
@@ -3687,14 +3690,17 @@ body {
       border: solid 1px #ededed;
       border-left: none;
       border-right: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      position: fixed;
+      width: 100%;
+      top: 0; }
       body header .navbar .nav-item {
         height: 47px; }
         body header .navbar .nav-item a {
           color: #282828; }
       body header .navbar .nav-consultation-link {
         padding-right: 0;
-        font-family: 'DINPro-Bold',sans-serif;
+        font-family: 'DINPro-Bold', sans-serif;
         font-weight: bold; }
     body header .bottom-border {
       border: solid 0.5px #b9b9b9; }
@@ -3719,7 +3725,8 @@ body {
         body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:hover, body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:focus, body header .header-bg .header-content .row .consultation-btn .hvr-sweep-to-right:active {
           color: #ff2c4f; }
         body header .header-bg .header-content .row .consultation-btn .btn {
-          font-size: 21px;
+          font-size: 20px;
+          font-weight: 200;
           background-color: #ff2c4f;
           border: solid 1px rgba(184, 40, 64, 0.7);
           border-radius: 0;
@@ -3727,23 +3734,20 @@ body {
           body header .header-bg .header-content .row .consultation-btn .btn:focus {
             box-shadow: 0 0 0 0.1rem #fff; }
         body header .header-bg .header-content .row .check-kits {
-          padding: 15px 13px; }
+          padding: 15px 25px; }
           body header .header-bg .header-content .row .check-kits .kits {
             font-size: 21px;
             color: #fff;
             text-decoration: underline; }
-  body .what-we-do-sec {
-    background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0 60%;
-    background-size: auto; }
-    body .what-we-do-sec .what-we-do-sec-text-2 {
-      font-size: 23px; }
-    body .what-we-do-sec .logos-section {
-      display: inline-flex;
-      text-align: center; }
-    body .what-we-do-sec .hvr-sweep-to-left:before {
-      background: #ff2c4f; }
-    body .what-we-do-sec .hvr-sweep-to-left:hover, body .what-we-do-sec .hvr-sweep-to-left:focus, body .what-we-do-sec .hvr-sweep-to-left:active {
-      color: white; }
+  body .what-we-do-sec .what-we-do-sec-text-2 {
+    font-size: 23px; }
+  body .what-we-do-sec .logos-section {
+    display: inline-flex;
+    text-align: center; }
+  body .what-we-do-sec .hvr-sweep-to-left:before {
+    background: #ff2c4f; }
+  body .what-we-do-sec .hvr-sweep-to-left:hover, body .what-we-do-sec .hvr-sweep-to-left:focus, body .what-we-do-sec .hvr-sweep-to-left:active {
+    color: white; }
   body .web-design-section ul {
     list-style: none;
     padding: 0; }
@@ -3783,7 +3787,7 @@ body {
       color: #282828; }
     body .dark-bg .form-btn-style {
       background-color: #ff2c4f;
-      border-color: #ff2c4f;
+      border: none;
       max-width: 100%;
       padding-left: 28px;
       padding-right: 28px; }
@@ -3791,18 +3795,18 @@ body {
       background: #fff; }
     body .dark-bg .hvr-sweep-to-right:hover, body .dark-bg .hvr-sweep-to-right:focus, body .dark-bg .hvr-sweep-to-right:active {
       color: #ff2c4f !important; }
-  body #sales-marketing-section .red-marker {
+  body .sales-marketing-section .red-marker {
     width: 185px; }
-  body #sales-marketing-section #img-2 {
+  body .sales-marketing-section #img-2 {
     top: 45%;
     left: 60%; }
-  body #sales-marketing-section #list-2 {
+  body .sales-marketing-section #list-2 {
     width: 485px; }
-  body #sales-marketing-section #from-700 {
+  body .sales-marketing-section #from-700 {
     padding-right: 32px; }
-  body #sales-marketing-section .hvr-sweep-to-left:before {
+  body .sales-marketing-section .hvr-sweep-to-left:before {
     background: #ff2c4f; }
-  body #sales-marketing-section .hvr-sweep-to-left:hover, body #sales-marketing-section .hvr-sweep-to-left:focus, body #sales-marketing-section .hvr-sweep-to-left:active {
+  body .sales-marketing-section .hvr-sweep-to-left:hover, body .sales-marketing-section .hvr-sweep-to-left:focus, body .sales-marketing-section .hvr-sweep-to-left:active {
     color: white; }
   body .consultation-sec ul li {
     list-style-type: none; }
@@ -3819,7 +3823,7 @@ body {
     width: 430px;
     padding-left: 28px;
     padding-right: 28px; }
-  body .consultation-sec #comment {
+  body .consultation-sec .comment {
     height: 136px;
     width: 430px; }
   body .consultation-sec .noresize {
@@ -3871,8 +3875,8 @@ body {
     top: 39px; }
   body .lab-resources-sec .load-more-btn {
     text-align: center; }
-    body .lab-resources-sec .load-more-btn .btn {
-      font-size: 23px !important; }
+    body .lab-resources-sec .load-more-btn .btn-lg {
+      padding: .5rem 23px; }
   body .rocket-science-sec {
     background: #141414 url("../images/Black & White 2.png") no-repeat right; }
     body .rocket-science-sec .red-marker {
@@ -3904,5 +3908,87 @@ body {
     body footer p {
       top: 50%;
       Transform: translate(0, -50%); }
+
+.container-fluid header .cancel {
+  margin-left: unset;
+  margin-right: unset; }
+
+@media screen and (max-width: 1500px) {
+  body .what-we-do-sec .custom-col {
+    flex: 0 0 50%;
+    max-width: 50%; } }
+@media screen and (max-width: 1365px) {
+  body .rocket-science-sec {
+    padding: 100px 15px 0; }
+    body .rocket-science-sec .red-marker {
+      top: 82%; }
+    body .rocket-science-sec .text-white p {
+      padding-bottom: 30px;
+      max-width: 90%; } }
+@media screen and (max-width: 1300px) {
+  body .what-we-do-sec .logos-section {
+    padding-left: 0; }
+  body .consultation-sec form {
+    padding-bottom: 100px; }
+  body .consultation-sec .form-btn-style-2 {
+    font-size: 18px; }
+  body .consultation-sec .left-padding-30, body .consultation-sec .pr-0, body .consultation-sec .pl-0 {
+    padding: 0 5px !important; }
+  body .consultation-sec .form-style-2 {
+    width: 100%; }
+  body .consultation-sec .left-padding-30.top-padding-100.bottom-padding-160 {
+    padding-bottom: 100px !important; }
+    body .consultation-sec .left-padding-30.top-padding-100.bottom-padding-160 p, body .consultation-sec .left-padding-30.top-padding-100.bottom-padding-160 ul {
+      font-size: 20px; } }
+@media screen and (max-width: 1230px) {
+  body .what-we-do-sec .custom-col img {
+    width: 100%; }
+  body .lab-resources-sec .align-items-center .col-md-3 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; } }
+@media screen and (max-width: 1191px) {
+  body .rocket-science-sec .red-marker {
+    top: 86%;
+    width: 235px; }
+  body .footer-sec .email {
+    font-size: 26px; }
+  body .footer-sec .font-size-25 {
+    font-size: 20px; }
+  body .footer-sec .top-margin-55 {
+    margin-top: 45px; } }
+@media screen and (max-width: 1130px) {
+  body .lab-resources-sec .row .bolded-font-size-30 {
+    font-size: 25px; } }
+@media screen and (max-width: 1120px) {
+  body .navbar {
+    font-size: 14px; } }
+@media screen and (max-width: 1100px) {
+  body .web-design-section .left-margin-206 {
+    margin-left: 55px; }
+    body .web-design-section .left-margin-206 .top-padding-50 ul {
+      font-size: 20px; }
+  body .web-design-section .text-right.right-padding-165 {
+    padding-right: 50px; }
+  body .web-design-section .row.left-padding-206.top-padding-100.bottom-margin-50 {
+    padding-left: 55px; }
+    body .web-design-section .row.left-padding-206.top-padding-100.bottom-margin-50 span {
+      font-size: 20px; }
+  body .web-design-section.sales-marketing-section .left-margin-206 {
+    margin-left: auto; }
+  body .rocket-science-sec {
+    padding: 100px 15px 0; }
+    body .rocket-science-sec .text-white p {
+      padding-bottom: 30px;
+      max-width: 90%; } }
+@media screen and (max-width: 1050px) {
+  body .navbar {
+    font-size: 12px; }
+    body .navbar .nav-item {
+      height: 35px !important; } }
+@media screen and (max-width: 920px) {
+  body .dark-bg .left-padding-206.top-padding-150 {
+    padding: 150px 30px 0 50px; }
+  body .dark-bg form .form-style {
+    width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
