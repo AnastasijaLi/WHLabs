@@ -3984,8 +3984,66 @@ body {
   body .navbar {
     font-size: 12px; }
     body .navbar .nav-item {
-      height: 35px !important; } }
+      height: 35px !important; }
+  body .dark-bg .left-padding-206 {
+    padding-left: 55px; }
+  body .dark-bg .grey-clr-4.top-padding-100 {
+    padding-top: 20px; } }
+@media screen and (max-width: 991px) {
+  body header .navbar-light .navbar-toggler {
+    border: none;
+    font-size: 2.25rem; } }
 @media screen and (max-width: 920px) {
+  body header .header-bg {
+    background: url(../images/slide-photo2.png) no-repeat 64%;
+    background-size: cover;
+    height: 800px; }
+  body header .header-content {
+    margin: auto;
+    padding-top: 290px !important; }
+    body header .header-content .header-text {
+      margin-bottom: 70px !important; }
+    body header .header-content h1 {
+      margin: auto !important;
+      font-size: 52px !important;
+      max-width: 80% !important; }
+    body header .header-content .consultation-btn {
+      text-align: center;
+      flex: 0 0 100%;
+      max-width: 100%; }
+      body header .header-content .consultation-btn .btn {
+        width: 80%;
+        font-size: 33px !important;
+        padding: 20px 25px !important; }
+    body header .header-content .check-kits {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center; }
+      body header .header-content .check-kits a {
+        font-size: 28px !important; }
+  body .what-we-do-sec .left-margin-206 {
+    margin-left: 130px; }
+    body .what-we-do-sec .left-margin-206 p.max-width-80 {
+      max-width: 65%; }
+  body .what-we-do-sec .row.top-padding-100.bottom-margin-50 {
+    margin: auto; }
+  body .what-we-do-sec .col-md-5.custom-col {
+    flex: 0 0 100%;
+    max-width: 100%; }
+    body .what-we-do-sec .col-md-5.custom-col img {
+      width: 100%; }
+  body .what-we-do-sec .col-md-3.custom-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center; }
+    body .what-we-do-sec .col-md-3.custom-col p {
+      font-size: 32px;
+      padding: 90px 100px 30px 100px; }
+    body .what-we-do-sec .col-md-3.custom-col .top-margin-70 {
+      margin-top: 0; }
+    body .what-we-do-sec .col-md-3.custom-col .btn {
+      font-size: 32px;
+      font-weight: normal; }
   body .dark-bg .left-padding-206.top-padding-150 {
     padding: 150px 30px 0 50px; }
   body .dark-bg form .form-style {

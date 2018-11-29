@@ -955,12 +955,101 @@ body {
         height: 35px !important;
       }
     }
+    .dark-bg {
+      .left-padding-206 {
+        padding-left: 55px;
+      }
+      .grey-clr-4.top-padding-100 {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    header {
+      .navbar-light .navbar-toggler {
+        border: none;
+        font-size: 2.25rem;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 920px) {
   body {
-
+    header {
+      .header-bg {
+        background: url(../images/slide-photo2.png) no-repeat 64%;
+        background-size: cover;
+        height: 800px;
+      }
+      .header-content {
+        margin: auto;
+        padding-top: 290px !important;
+        .header-text {
+          margin-bottom: 70px !important;
+        }
+        h1 {
+          margin: auto !important;
+          font-size: 52px !important;
+          max-width: 80% !important;
+        }
+        .consultation-btn {
+          text-align: center;
+          flex: 0 0 100%;
+          max-width: 100%;
+          .btn {
+            width: 80%;
+            font-size: 33px !important;
+            padding: 20px 25px !important;
+          }
+        }
+        .check-kits {
+          flex: 0 0 100%;
+          max-width: 100%;
+          text-align: center;
+          a {
+            font-size: 28px !important;
+          }
+        }
+      }
+    }
+    .what-we-do-sec {
+      .left-margin-206 {
+        margin-left: 130px;
+        p.max-width-80 {
+          max-width: 65%;
+        }
+      }
+      .row.top-padding-100.bottom-margin-50 {
+        margin: auto;
+      }
+      .col-md-5.custom-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .col-md-3.custom-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        p {
+          font-size: 32px;
+          padding: 90px 100px 30px 100px;
+        }
+        .top-margin-70 {
+          margin-top: 0;
+        }
+        .btn {
+          font-size: 32px;
+          font-weight: normal;
+        }
+      }
+    }
     .dark-bg {
       .left-padding-206.top-padding-150 {
         padding: 150px 30px 0 50px;
