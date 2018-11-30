@@ -3603,6 +3603,8 @@ body {
     font-style: normal;
     font-size: 46px;
     line-height: 3.5rem; }
+  body .display-mobile {
+    display: none; }
   body .red-border-btn {
     background-color: #fff;
     color: #ff2c4f;
@@ -3742,7 +3744,7 @@ body {
   body .what-we-do-sec .what-we-do-sec-text-2 {
     font-size: 23px; }
   body .what-we-do-sec .logos-section {
-    display: inline-flex;
+    display: inline;
     text-align: center; }
   body .what-we-do-sec .hvr-sweep-to-left:before {
     background: #ff2c4f; }
@@ -4024,7 +4026,7 @@ body {
   body .what-we-do-sec .left-margin-206 {
     margin-left: 130px; }
     body .what-we-do-sec .left-margin-206 p.max-width-80 {
-      max-width: 65%; }
+      max-width: 70%; }
   body .what-we-do-sec .row.top-padding-100.bottom-margin-50 {
     margin: auto; }
   body .what-we-do-sec .col-md-5.custom-col {
@@ -4044,9 +4046,111 @@ body {
     body .what-we-do-sec .col-md-3.custom-col .btn {
       font-size: 32px;
       font-weight: normal; }
-  body .dark-bg .left-padding-206.top-padding-150 {
+
+  .web-design-section .title {
+    font-size: 26px; }
+  .web-design-section .heading {
+    max-width: 95%; }
+
+  .analyze-sec .left-padding-206.top-padding-150 {
     padding: 150px 30px 0 50px; }
-  body .dark-bg form .form-style {
+  .analyze-sec form .form-style {
     width: 100%; } }
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 100px;
+    line-height: normal; }
+    body .display-full {
+      display: none !important; }
+    body .display-mobile {
+      display: block; }
+    body .heading {
+      font-size: 52px; }
+    body .navbar {
+      height: 100px;
+      padding-right: 20px !important;
+      padding-left: 37% !important; }
+      body .navbar a.navbar-brand img {
+        height: 48px;
+        width: 180px; }
+    body .what-we-do-sec .logos-section .col-md.col-sm-6 {
+      padding-top: 50px; }
+    body .web-design-section {
+      padding: 75px 80px 0 80px;
+      margin: auto; }
+      body .web-design-section .bolded-font-size-25 {
+        font-size: 32px;
+        text-align: center; }
+      body .web-design-section .left-margin-206 {
+        margin: unset; }
+      body .web-design-section .left-margin-206 .top-padding-50 ul {
+        font-size: 32px; }
+        body .web-design-section .left-margin-206 .top-padding-50 ul li {
+          max-width: 100%; }
+    body .analyze-sec {
+      height: 520px; }
+      body .analyze-sec .heading {
+        text-align: center;
+        max-width: 100%; }
+      body .analyze-sec .left-padding-206.top-padding-150 {
+        padding: 75px 60px 0 60px; }
+      body .analyze-sec .form-row .col-md-5 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        padding-right: 0; }
+      body .analyze-sec .form-row .font-size-25 {
+        font-size: 20px; }
+      body .analyze-sec .form-row .form-style {
+        height: 90px; }
+      body .analyze-sec .form-row .form-btn-style {
+        max-width: 33%; }
+    body .download-sec {
+      text-align: center; }
+      body .download-sec .left-padding-206.top-padding-150 {
+        padding: 90px 120px 0 120px; }
+      body .download-sec .heading {
+        max-width: 100%; }
+      body .download-sec .grey-clr-4.top-padding-100 {
+        line-height: normal;
+        padding: 55px 0; }
+      body .download-sec .display-mobile p {
+        max-width: 75%;
+        margin: auto;
+        font-size: 32px;
+        color: white; }
+      body .download-sec .display-mobile .d-inline-block.text-center {
+        width: 60%; }
+      body .download-sec .download-btn {
+        font-size: 32px;
+        font-weight: normal;
+        width: 100%; }
+      body .download-sec .consult-link {
+        font-size: 20px; }
+    body .rocket-science-sec {
+      padding: 75px 0 0;
+      height: 655px !important;
+      background-size: 495px 655px;
+      background-position-x: 150% !important;
+      text-align: center; }
+      body .rocket-science-sec .col-md-8.z-ind-1 {
+        max-width: 75%;
+        margin: auto; }
+      body .rocket-science-sec .max-width-60 {
+        max-width: 100%; }
+      body .rocket-science-sec .text-white p {
+        font-size: 32px;
+        max-width: 55%;
+        margin: auto !important;
+        padding-bottom: 90px; }
+      body .rocket-science-sec .red-marker {
+        top: 71px;
+        width: 328px;
+        left: 20px;
+        height: 12px; }
+      body .rocket-science-sec .download-btn {
+        display: inline-block !important;
+        font-weight: normal;
+        font-size: 26px;
+        width: 55%; } }
 
 /*# sourceMappingURL=styles.css.map */
