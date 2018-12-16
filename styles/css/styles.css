@@ -3753,15 +3753,6 @@ body {
       top: 20px;
       right: 45px;
       font-size: 60px; }
-    @media screen and (max-height: 450px) {
-      body header .overlay {
-        overflow-y: auto; }
-      body header .overlay a {
-        font-size: 20px; }
-      body header .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px; } }
     body header .header-social-links {
       font-size: 12.5px;
       font-family: "DINPro";
@@ -4049,7 +4040,7 @@ body {
     body .project-group-sec .col-md-6:hover .overlay-it {
       opacity: 0.3; }
     body .project-group-sec .overlay-bg {
-      transition: .5s ease;
+      transition: .5s ease-in;
       opacity: 0;
       background: #dcdcdce0;
       position: absolute;
@@ -4290,8 +4281,7 @@ body {
     background-size: cover;
     height: 800px; }
   body header .header-content {
-    margin: auto;
-    padding-top: 290px !important; }
+    margin: auto; }
     body header .header-content .header-text {
       margin-bottom: 70px !important; }
     body header .header-content h1 {
@@ -4549,5 +4539,16 @@ body {
     body footer {
       background-color: white;
       padding-left: 55px !important; } }
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto; }
+
+  .overlay a {
+    font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
 
 /*# sourceMappingURL=styles.css.map */

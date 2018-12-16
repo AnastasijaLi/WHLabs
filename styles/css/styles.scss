@@ -23,21 +23,6 @@
   font-style: normal;
 }
 
-//@font-face {
-//  font-family: DINPro-Bold;
-//  src: url("../fonts/DINPro Bold.otf");
-//}
-//
-//@font-face {
-//  font-family: DIN-Light;
-//  src: url("../fonts/DIN-Light.ttf");
-//}
-//
-//@font-face {
-//  font-family: Playfair-Display-bold;
-//  src: url("../fonts/PlayfairDisplay-Bold.otf");
-//}
-
 @import "variables";
 @import "scss/hover.scss";
 
@@ -69,7 +54,6 @@ body {
   }
 
   font-family: $font-din-light;
-  //font-family: "Times New Roman", Times, serif;
   color: #282828;
 
   .height-726 {
@@ -175,14 +159,6 @@ body {
     font-size: 21px;
     color: #2e2e2e;
   }
-
-  //.heading {
-  //  font-family: 'Playfair Display';
-  //  font-weight: bold;
-  //  font-style: normal;
-  //  font-size: 46px;
-  //  line-height: 3.5rem;
-  //}
 
   .heading {
     font-family: $font-din-pro;
@@ -410,7 +386,6 @@ body {
       display: block;
       transition: 0.7s;
       text-transform: uppercase;
-
     }
 
     .overlay a:hover, .overlay a:focus {
@@ -425,20 +400,6 @@ body {
       font-size: 60px;
     }
 
-    @media screen and (max-height: 450px) {
-      .overlay {
-        overflow-y: auto;
-      }
-      .overlay a {
-        font-size: 20px
-      }
-      .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-      }
-    }
-
     .header-social-links {
       font-size: 12.5px;
       font-family: $font-din-pro;
@@ -447,8 +408,8 @@ body {
         color: white !important;
       }
     }
-    // Nav with overlay
 
+    // Nav with overlay
     nav.navbar.navbar-dark.bg-primary.justify-content-end {
       background: transparent !important;
       width: 100%;
@@ -480,38 +441,11 @@ body {
 
     //sita navbara istrint veliau
     .navbar {
-      //background-color: transparent;
-      ////border: solid 1px #ededed;
-      //border-left: none;
-      //border-right: none;
-      //text-transform: uppercase;
-      //position: absolute;
-      //width: 100%;
-      //top: 0;
-      //z-index: 100;
-      //color: white;
-
       .nav-item {
         height: 47px;
-        //.red-border {
-        //  transition: height 0.2s ease;
-        //  height: 0;
-        //  border: none;
-        //}
         a {
           color: white;
         }
-
-        //&:hover > .red-border {
-        //  display: block;
-        //  height: 7px;
-        //  border: solid 1px rgba(255, 109, 134, 0.7);
-        //}
-        //&:hover > a {
-        //  font-family: $font-din-pro;
-        //  text-transform: uppercase;
-        //}
-
       }
 
       .nav-consultation-link {
@@ -560,8 +494,6 @@ body {
   // What we do section starts here
 
   .what-we-do-sec {
-    //background: url("../images/liam-martens-680583-unsplash.png") no-repeat 0 62.7%;
-    // background-size: auto;
 
     .what-we-do-sec-text-2 {
       font-size: 23px;
@@ -992,7 +924,7 @@ body {
       opacity: 0.3;
     }
     .overlay-bg {
-      transition: .5s ease;
+      transition: .5s ease-in;
       opacity: 0;
       background: #dcdcdce0;
       position: absolute;
@@ -1489,7 +1421,6 @@ body {
       }
       .header-content {
         margin: auto;
-        padding-top: 290px !important;
         .header-text {
           margin-bottom: 70px !important;
         }
@@ -1898,5 +1829,19 @@ body {
       padding-left: 55px !important;
     }
 
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
