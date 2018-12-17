@@ -37,6 +37,12 @@ html {
 
 body {
 
+  .display-full {
+    display: block;
+  }
+  .display-mobile {
+    display: none;
+  }
   .red-border {
     margin: 0 8px;
     height: 7px;
@@ -166,10 +172,6 @@ body {
     font-style: normal;
     font-size: 46px;
     line-height: 3.5rem;
-  }
-
-  .display-mobile {
-    display: none;
   }
 
   .custom-btn-2 {
@@ -605,7 +607,7 @@ body {
   // Web & Mobile design section starts
   .web-mob-design-sec {
     background: #fff8f9;
-    height: 545px;
+    padding-bottom: 116px;
     .title {
       font-size: 18px;
       text-align: right;
@@ -648,7 +650,7 @@ body {
   // Online marketing section starts
   .online-mark-sec {
     background: #f7f7f7;
-    height: 545px;
+    padding-bottom: 116px;
     padding-top: 103px;
 
     .title {
@@ -1342,6 +1344,12 @@ body {
 
 @media screen and (max-width: 1100px) {
   body {
+    .web-mob-design-sec, .online-mark-sec, .e-solutions-sec {
+      .left-padding-160 {
+        padding-left: 0;
+      }
+    }
+
     .web-design-section {
       .left-margin-206 {
         margin-left: 55px;
@@ -1449,6 +1457,29 @@ body {
         }
       }
     }
+
+    .e-solutions-sub-sec {
+      .display-full {
+        display: none !important;
+      }
+      .display-mobile {
+        display: inline;
+        .col-sm-12 {
+          padding: 30px 50px;
+        }
+        .position-relative.right-margin-25 {
+          height: 60px;
+          width: 60px;
+        }
+      }
+      .display-mobile.row.top-padding-100.bottom-margin-50 {
+        span {
+          font-size: 32px !important;
+        }
+
+      }
+    }
+
     .what-we-do-sec {
       .left-padding-206 {
         padding-left: 75px;
@@ -1503,21 +1534,26 @@ body {
       }
 
     }
-    .display-mobile.row.top-padding-100.bottom-margin-50 {
-      span {
-        font-size: 32px !important;
-      }
-    }
+
   }
   .analyze-sec {
     .left-padding-206.top-padding-150 {
       padding: 150px 30px 0 50px;
+    }
+    .display-full {
+      display: flex!important;
     }
     form {
       .form-style {
         width: 100%;
       }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-bg .header-content {
+    max-width: 85% !important;
   }
 }
 
