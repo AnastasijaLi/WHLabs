@@ -3533,9 +3533,6 @@
 html, body {
   overflow-x: hidden; }
 
-html {
-  scroll-behavior: smooth; }
-
 body {
   font-family: "DIN";
   color: #282828; }
@@ -3834,6 +3831,8 @@ body {
       background: url("../images/privilege-logo.png") no-repeat center; }
     body .what-we-do-sec .logos-section .culture-factory {
       background: url("../images/culture-factory-logo.png") no-repeat center; }
+  body .what-we-do-sec .logos-section.display-full {
+    display: flex; }
   body .what-we-do-sec .custom-btn .btn {
     border: solid 4px #403e3e;
     font-size: 22px;
@@ -3945,10 +3944,15 @@ body {
       color: #ff2c4f !important; }
   body .e-solutions-sub-sec {
     padding-bottom: 150px; }
+    body .e-solutions-sub-sec .display-full {
+      max-width: 75%;
+      margin: auto; }
     body .e-solutions-sub-sec .row {
       justify-content: space-evenly; }
+      body .e-solutions-sub-sec .row .col-md-6 {
+        padding: 20px 50px 90px 50px; }
   body .dark-bg {
-    height: 656px;
+    padding-bottom: 104px;
     background-color: #282828; }
     body .dark-bg .input-link {
       width: 461px;
@@ -3976,8 +3980,10 @@ body {
     body .dark-bg .hvr-sweep-to-right:hover, body .dark-bg .hvr-sweep-to-right:focus, body .dark-bg .hvr-sweep-to-right:active {
       color: #ff2c4f !important; }
   body .web-mob-app-sec {
-    height: 800px;
+    padding-bottom: 148px;
     background: #282828; }
+    body .web-mob-app-sec .web-mob-app-sec-txt.display-full {
+      display: flex !important; }
     body .web-mob-app-sec .row {
       padding-top: 150px; }
       body .web-mob-app-sec .row .title {
@@ -4265,7 +4271,10 @@ body {
     padding: 100px 15px 0; }
     body .rocket-science-sec .text-white p {
       padding-bottom: 30px;
-      max-width: 90%; } }
+      max-width: 90%; }
+
+  .project-group-sec .col-md-6 {
+    padding: 40px !important; } }
 @media screen and (max-width: 1050px) {
   body .navbar {
     font-size: 12px; }
@@ -4274,7 +4283,27 @@ body {
   body .dark-bg .left-padding-206 {
     padding-left: 55px; }
   body .dark-bg .grey-clr-4.top-padding-100 {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+  body .web-mob-app-sec {
+    height: 800px; }
+    body .web-mob-app-sec .web-mob-app-sec-txt.display-full {
+      display: none !important; }
+    body .web-mob-app-sec .row.justify-content-end.d-flex.align-items-center.display-full {
+      display: none !important; }
+    body .web-mob-app-sec .display-mobile {
+      display: block; }
+    body .web-mob-app-sec .mobile {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    body .web-mob-app-sec .web-mob-app-sec-txt.display-mobile {
+      margin: auto;
+      height: 800px;
+      width: 400px; }
+    body .web-mob-app-sec .col-md-12.position-absolute {
+      top: 80%;
+      left: 56%;
+      transform: translate(-50%, -50%); } }
 @media screen and (max-width: 991px) {
   body header .navbar-light .navbar-toggler {
     border: none;
@@ -4355,32 +4384,22 @@ body {
 
   .analyze-sec .left-padding-206.top-padding-150 {
     padding: 150px 30px 0 50px; }
-  .analyze-sec .display-full {
-    display: flex !important; }
   .analyze-sec form .form-style {
     width: 100%; } }
+@media screen and (max-width: 883px) {
+  .dark-bg.analyze-sec .max-width-55 {
+    max-width: 90%; } }
 @media screen and (max-width: 800px) {
   .header-bg .header-content {
     max-width: 85% !important; } }
 @media screen and (max-width: 767px) {
   body {
     line-height: normal; }
-    body .display-full {
-      display: none !important; }
-    body .display-mobile {
-      display: flex; }
     body .heading {
       font-size: 52px; }
     body .navbar {
       height: 100px;
       padding: 0 !important; }
-      body .navbar a.navbar-brand {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0); }
-        body .navbar a.navbar-brand img {
-          height: 48px;
-          width: 180px; }
       body .navbar .mobile-nav-btn {
         width: 100%;
         text-align: right; }
@@ -4407,23 +4426,25 @@ body {
       body .web-design-section img.position-relative.right-margin-25 {
         height: 72px;
         width: 72px; }
-    body .analyze-sec {
-      height: 520px; }
-      body .analyze-sec .heading {
-        text-align: center;
-        max-width: 100%; }
-      body .analyze-sec .left-padding-206.top-padding-150 {
-        padding: 75px 60px 0 60px; }
-      body .analyze-sec .form-row .col-md-5 {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-        padding-right: 0; }
-      body .analyze-sec .form-row .font-size-25 {
-        font-size: 20px; }
-      body .analyze-sec .form-row .form-style {
-        height: 90px; }
-      body .analyze-sec .form-row .form-btn-style {
-        max-width: 33%; }
+    body .analyze-sec .heading {
+      text-align: center;
+      max-width: 100%; }
+    body .analyze-sec .left-padding-206.top-padding-150 {
+      padding: 75px 60px 0 60px; }
+    body .analyze-sec .display-full {
+      display: none !important; }
+    body .analyze-sec .display-mobile {
+      display: flex !important; }
+    body .analyze-sec .form-row .col-md-5 {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+      padding-right: 0; }
+    body .analyze-sec .form-row .font-size-25 {
+      font-size: 20px; }
+    body .analyze-sec .form-row .form-style {
+      height: 90px; }
+    body .analyze-sec .form-row .form-btn-style {
+      max-width: 33%; }
     body .sales-marketing-section {
       padding: 75px 20px 0 20px;
       margin: auto; }
@@ -4557,6 +4578,82 @@ body {
     body footer {
       background-color: white;
       padding-left: 55px !important; } }
+@media screen and (max-width: 510px) {
+  body header .container-fluid.p-0 {
+    position: relative; }
+  body header .navbar-nav.display-inline {
+    display: none !important; }
+  body header .overlay-content .row {
+    padding-top: 100px; }
+  body header .navbar-brand {
+    display: none; }
+  body header .navbar-brand.display-mobile {
+    display: block;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0; }
+  body header .header-social-links {
+    padding: 80px 0 0; }
+    body header .header-social-links .col-md-1 {
+      width: 33%; }
+  body header .header-bg {
+    position: relative;
+    background: url(../images/slide-photo2.png) no-repeat 67%;
+    height: 555px;
+    background-size: cover; }
+  body header .header-content {
+    padding: 55px 0 0 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+    body header .header-content h1 {
+      line-height: 2.5rem !important;
+      font-size: 36px !important;
+      text-align: center;
+      max-width: 100% !important; }
+    body header .header-content .custom-btn .btn {
+      font-size: 21px !important;
+      width: 80% !important;
+      padding: 10px 40px 10px 0 !important; }
+  body .what-we-do-sec .col-md-12.left-padding-206 {
+    padding: 0 35px; }
+  body .what-we-do-sec .left-padding-206 p.max-width-80 {
+    max-width: 100%;
+    padding-top: 50px; }
+  body .what-we-do-sec .heading {
+    font-size: 32px !important;
+    line-height: 2.5rem; }
+  body .logos-section.display-full {
+    display: none !important; }
+  body .logos-section.display-mobile {
+    display: flex !important; }
+    body .logos-section.display-mobile .huawei {
+      background: url("../images/huawei-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .baltic-talents {
+      background: url("../images/baltic-talents-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .aeg {
+      background: url("../images/aeg-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .opex {
+      background: url("../images/opex-logo-2-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .electrolux {
+      background: url("../images/electrolux-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .aidos-studija {
+      background: url("../images/aidos-studija-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .privilege {
+      background: url("../images/privilege-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .culture-factory {
+      background: url("../images/culture-factory-logo-mobile.png") no-repeat center; }
+    body .logos-section.display-mobile .col-sm-3, body .logos-section.display-mobile .col-sm-6 {
+      height: 60px;
+      border: solid 1px #f0f0f0; }
+    body .logos-section.display-mobile .col-sm-3 {
+      width: 33%; }
+    body .logos-section.display-mobile .col-sm-6 {
+      width: 66%; } }
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto; }

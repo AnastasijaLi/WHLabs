@@ -31,9 +31,9 @@ html, body {
   overflow-x: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+//html {
+//  scroll-behavior: smooth;
+//}
 
 body {
 
@@ -543,6 +543,9 @@ body {
         background: url("../images/culture-factory-logo.png") no-repeat center;
       }
     }
+    .logos-section.display-full{
+      display: flex;
+    }
 
     .custom-btn {
       .btn {
@@ -773,15 +776,22 @@ body {
 
   .e-solutions-sub-sec {
     padding-bottom: 150px;
+    .display-full {
+      max-width: 75%;
+      margin: auto;
+    }
     .row {
       justify-content: space-evenly;
+      .col-md-6 {
+        padding: 20px 50px 90px 50px;
+      }
     }
   }
   //E-solutions section ends
 
   // Analyze section starts
   .dark-bg {
-    height: 656px;
+    padding-bottom: 104px;
     background-color: $dark-color;
 
     .input-link {
@@ -831,7 +841,11 @@ body {
 
   // Web + mobile app sec starts
   .web-mob-app-sec {
-    height: 800px;
+    .web-mob-app-sec-txt.display-full {
+      display: flex !important;
+    }
+
+    padding-bottom: 148px;
     background: #282828;
     .row {
       padding-top: 150px;
@@ -1387,6 +1401,9 @@ body {
       }
     }
   }
+  .project-group-sec .col-md-6 {
+    padding: 40px !important;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -1405,6 +1422,34 @@ body {
         padding-top: 20px;
       }
     }
+    .web-mob-app-sec {
+      height: 800px;
+      .web-mob-app-sec-txt.display-full {
+        display: none !important;
+      }
+      .row.justify-content-end.d-flex.align-items-center.display-full {
+        display: none !important;
+      }
+      .display-mobile {
+        display: block;
+      }
+      .mobile {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .web-mob-app-sec-txt.display-mobile {
+        margin: auto;
+        height: 800px;
+        width: 400px;
+      }
+      .col-md-12.position-absolute {
+        top: 80%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
   }
 }
 
@@ -1540,13 +1585,19 @@ body {
     .left-padding-206.top-padding-150 {
       padding: 150px 30px 0 50px;
     }
-    .display-full {
-      display: flex!important;
-    }
+
     form {
       .form-style {
         width: 100%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 883px) {
+  .dark-bg.analyze-sec {
+    .max-width-55 {
+      max-width: 90%;
     }
   }
 }
@@ -1562,12 +1613,12 @@ body {
     //margin-top: 100px;
     line-height: normal;
 
-    .display-full {
-      display: none !important;
-    }
-    .display-mobile {
-      display: flex;
-    }
+    //.display-full {
+    //  display: none !important;
+    //}
+    //.display-mobile {
+    //  display: flex;
+    //}
     .heading {
       font-size: 52px;
     }
@@ -1575,15 +1626,15 @@ body {
     .navbar {
       height: 100px;
       padding: 0 !important;
-      a.navbar-brand {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        img {
-          height: 48px;
-          width: 180px;
-        }
-      }
+      //a.navbar-brand {
+      //  position: absolute;
+      //  left: 50%;
+      //  transform: translate(-50%, 0);
+      //  img {
+      //    height: 48px;
+      //    width: 180px;
+      //  }
+      //}
       .mobile-nav-btn {
         width: 100%;
         text-align: right;
@@ -1634,13 +1685,18 @@ body {
     }
 
     .analyze-sec {
-      height: 520px;
       .heading {
         text-align: center;
         max-width: 100%;
       }
       .left-padding-206.top-padding-150 {
         padding: 75px 60px 0 60px;
+      }
+      .display-full {
+        display: none !important;
+      }
+      .display-mobile {
+        display: flex !important;
       }
       .form-row {
         .col-md-5 {
@@ -1865,6 +1921,125 @@ body {
       padding-left: 55px !important;
     }
 
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    header {
+      .container-fluid.p-0{
+        position: relative;
+      }
+      .navbar-nav.display-inline{
+        display: none!important;
+      }
+      .overlay-content .row{
+        padding-top: 100px;
+      }
+      .navbar-brand{
+        display: none;
+      }
+      .navbar-brand.display-mobile{
+        display: block;
+        top: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 0;
+      }
+      .header-social-links{
+        padding: 80px 0 0;
+        .col-md-1{
+          width: 33%;
+        }
+      }
+      .header-bg {
+        position: relative;
+        background: url(../images/slide-photo2.png) no-repeat 67%;
+        height: 555px;
+        background-size: cover;
+      }
+      .header-content {
+        padding: 55px 0 0 0 !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        h1 {
+          line-height: 2.5rem !important;
+          font-size: 36px !important;
+          text-align: center;
+          max-width: 100% !important;
+        }
+        .custom-btn .btn {
+          font-size: 21px !important;
+          width: 80% !important;
+          padding: 10px 40px 10px 0 !important;
+        }
+      }
+    }
+    .what-we-do-sec {
+      .col-md-12.left-padding-206 {
+        padding: 0 35px;
+      }
+      .left-padding-206 p.max-width-80 {
+        max-width: 100%;
+        padding-top: 50px;
+      }
+      .heading {
+        font-size: 32px !important;
+        line-height: 2.5rem;
+      }
+    }
+    .logos-section.display-full {
+      display: none!important;
+    }
+    .logos-section.display-mobile {
+      display: flex !important;
+      .huawei {
+        background: url("../images/huawei-logo-mobile.png") no-repeat center;
+
+      }
+
+      .baltic-talents {
+        background: url("../images/baltic-talents-logo-mobile.png") no-repeat center;
+      }
+
+      .aeg {
+        background: url("../images/aeg-logo-mobile.png") no-repeat center;
+      }
+
+      .opex {
+        background: url("../images/opex-logo-2-mobile.png") no-repeat center;
+      }
+
+      .electrolux {
+        background: url("../images/electrolux-logo-mobile.png") no-repeat center;
+      }
+
+      .aidos-studija {
+        background: url("../images/aidos-studija-logo-mobile.png") no-repeat center;
+      }
+
+      .privilege {
+        background: url("../images/privilege-logo-mobile.png") no-repeat center;
+      }
+
+      .culture-factory {
+        background: url("../images/culture-factory-logo-mobile.png") no-repeat center;
+      }
+      .col-sm-3 , .col-sm-6{
+        height: 60px;
+        border: solid 1px #f0f0f0;
+      }
+      .col-sm-3{
+        width: 33%;
+      }
+      .col-sm-6{
+        width: 66%;
+      }
+    }
   }
 }
 
