@@ -43,6 +43,9 @@ body {
   .display-mobile {
     display: none;
   }
+  .display-mobile-2 {
+    display: none;
+  }
   .red-border {
     margin: 0 8px;
     height: 7px;
@@ -543,7 +546,7 @@ body {
         background: url("../images/culture-factory-logo.png") no-repeat center;
       }
     }
-    .logos-section.display-full{
+    .logos-section.display-full {
       display: flex;
     }
 
@@ -1035,8 +1038,8 @@ body {
       background-color: $reddish-color;
       border-color: $reddish-color;
       width: 430px;
-      padding-left: 28px;
-      padding-right: 28px;
+      //padding-left: 28px;
+      //padding-right: 28px;
     }
 
     .comment {
@@ -1422,6 +1425,21 @@ body {
         padding-top: 20px;
       }
     }
+    .web-mob-app-sec-title.display-mobile {
+      display: block;
+      padding-bottom: 150px;
+      text-align: center;
+      .title {
+        font-size: 32px;
+        color: $reddish-color;
+        font-family: $font-din-pro;
+        padding-bottom: 20px;
+      }
+      .pricing {
+        font-size: 18px;
+        color: #c2c2c2;
+      }
+    }
     .web-mob-app-sec {
       height: 800px;
       .web-mob-app-sec-txt.display-full {
@@ -1449,7 +1467,37 @@ body {
         transform: translate(-50%, -50%);
       }
     }
-
+    .app-btn {
+      text-align: center;
+      .custom-btn-2 {
+        border: none;
+        background: $reddish-color;
+        font-weight: normal;
+        border: solid 1px $reddish-color;
+        padding: 14px 30px;
+      }
+      .hvr-sweep-to-right {
+        &:before {
+          background: $white-clr;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          color: $reddish-color !important;
+        }
+      }
+    }
+    .project-group-sec {
+      padding-top: 300px;
+    }
+  }
+  .footer-sec {
+    padding: 50px 40px !important;
+    .footer-logo {
+      flex: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
   }
 }
 
@@ -1502,7 +1550,17 @@ body {
         }
       }
     }
+    .analyze-sec {
+      .form-btn-style {
+        padding: 0;
+      }
+    }
 
+    .e-solutions-sec {
+      .row.features-col.display-full {
+        display: none !important;
+      }
+    }
     .e-solutions-sub-sec {
       .display-full {
         display: none !important;
@@ -1521,7 +1579,25 @@ body {
         span {
           font-size: 32px !important;
         }
-
+      }
+      .row.display-mobile.e-solutions-btn {
+        display: block;
+        .col-sm-12 {
+          text-align: center;
+        }
+      }
+      .btn.btn-primary {
+        background-color: #fff;
+        border: solid 4px $reddish-color;
+        border-radius: 0;
+        padding-left: 28px;
+        padding-right: 28px;
+        color: $reddish-color;
+        font-size: 16px;
+        font-family: $font-din-pro;
+      }
+      .hvr-sweep-to-right:hover {
+        color: #fff;
       }
     }
 
@@ -1619,6 +1695,7 @@ body {
     //.display-mobile {
     //  display: flex;
     //}
+
     .heading {
       font-size: 52px;
     }
@@ -1699,10 +1776,11 @@ body {
         display: flex !important;
       }
       .form-row {
-        .col-md-5 {
-          flex: 0 0 66.666667%;
-          max-width: 66.666667%;
-          padding-right: 0;
+        .col-md-5, .col-md-3 {
+          flex: 100%;
+          max-width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
         }
         .font-size-25 {
           font-size: 20px;
@@ -1711,7 +1789,7 @@ body {
           height: 90px;
         }
         .form-btn-style {
-          max-width: 33%;
+          margin: auto;
         }
       }
     }
@@ -1894,62 +1972,70 @@ body {
     }
 
     .footer-sec {
-      padding: 80px 55px 0 55px;
-      .font-size-25 {
+      padding: 100px 20px 20px !important;
+      text-align: center;
+      .title {
         font-size: 32px;
       }
-
+      .contact {
+        padding-bottom: 50px;
+        border-bottom: 1px solid gainsboro;
+      }
       .max-width-65 {
-        max-width: 85%;
+        max-width: 60%;
+        margin: auto;
+        padding-bottom: 20px;
+      }
+      .location {
+        padding-top: 50px;
+      }
+      .footer-icon {
+        text-align: center !important;
+        width: 50%;
+      }
+      .top-margin-55 {
+        margin-top: 0;
       }
       .email {
-        font-size: 36px !important;
+        font-size: 20px;
       }
-      a.email.font-dinpro {
-        text-decoration: underline !important;
-      }
-      .footer-small-font {
-        font-size: 26px;
-        margin: auto;
-      }
-      .display-mobile.col-sm-2 {
-        padding: 100px 0 100px 0;
-      }
-    }
-    footer {
-      background-color: white;
-      padding-left: 55px !important;
-    }
 
+    }
+    footer.container-fluid.left-padding-206.position-relative {
+      padding: 40px;
+      p {
+        font-size: 16px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 510px) {
   body {
     header {
-      .container-fluid.p-0{
+      .container-fluid.p-0 {
         position: relative;
       }
-      .navbar-nav.display-inline{
-        display: none!important;
+      .navbar-nav.display-inline {
+        display: none !important;
       }
-      .overlay-content .row{
+      .overlay-content .row {
         padding-top: 100px;
       }
-      .navbar-brand{
+      .navbar-brand {
         display: none;
       }
-      .navbar-brand.display-mobile{
+      .navbar-brand.display-mobile {
         display: block;
         top: 50%;
         position: absolute;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         padding: 0;
       }
-      .header-social-links{
+      .header-social-links {
         padding: 80px 0 0;
-        .col-md-1{
+        .col-md-1 {
           width: 33%;
         }
       }
@@ -1991,9 +2077,23 @@ body {
         font-size: 32px !important;
         line-height: 2.5rem;
       }
+      .col-md-5.custom-col {
+        padding: 0;
+      }
+      .col-md-3.custom-col {
+        padding-bottom: 50px;
+        p {
+          font-size: 18px;
+          padding: 40px 35px 10px 35px;
+        }
+        .btn {
+          font-size: 17px;
+          color: #000;
+        }
+      }
     }
     .logos-section.display-full {
-      display: none!important;
+      display: none !important;
     }
     .logos-section.display-mobile {
       display: flex !important;
@@ -2029,17 +2129,241 @@ body {
       .culture-factory {
         background: url("../images/culture-factory-logo-mobile.png") no-repeat center;
       }
-      .col-sm-3 , .col-sm-6{
+      .col-sm-3, .col-sm-6 {
         height: 60px;
         border: solid 1px #f0f0f0;
       }
-      .col-sm-3{
+      .col-sm-3 {
         width: 33%;
       }
-      .col-sm-6{
+      .col-sm-6 {
         width: 66%;
       }
     }
+    .web-mob-design-sec, .online-mark-sec, .e-solutions-sec {
+      .row {
+        padding: 40px;
+      }
+      .title.display-full {
+        display: none !important;
+      }
+      .heading {
+        font-size: 32px;
+        line-height: 2rem;
+      }
+      ul {
+        line-height: 1.8rem;
+      }
+      ul li {
+        font-size: 16px;
+      }
+      .pricing {
+        text-align: left;
+        font-size: 14px;
+        font-family: $font-din-light;
+        padding: 30px 0 20px;
+      }
+      .btn-lg {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: $font-din-pro;
+      }
+      padding-bottom: 0;
+
+    }
+    .text-right.display-full {
+      display: none !important;
+    }
+    .online-mark-sec, .e-solutions-sec {
+      padding-top: 0;
+    }
+
+    .e-solutions-sub-sec {
+      padding: 50px 40px;
+      .display-mobile .col-sm-12 {
+        padding: 25px 0;
+      }
+      .bolded-font-size-25 {
+        font-size: 32px;
+        padding-bottom: 0 !important;
+      }
+      .display-mobile .position-relative.right-margin-25 {
+        height: 50px;
+        width: 50px;
+      }
+      .right-margin-25 {
+        margin-right: 12px;
+      }
+      .display-mobile.row.top-padding-100.bottom-margin-50 span {
+        font-size: 17px !important;
+        top: 50%;
+        transform: translate(0, -50%);
+        //max-width: 55%;
+      }
+    }
+
+    .analyze-sec {
+      padding-bottom: 0;
+      .left-padding-206.top-padding-150 {
+        padding: 75px 40px 55px 40px;
+        .heading {
+          max-width: 100%;
+          font-size: 32px;
+          line-height: 2rem;
+          text-align: left;
+        }
+        .font-size-25 {
+          font-size: 18px;
+
+        }
+        .display-mobile.font-size-25.grey-clr-2.top-padding-50 {
+          max-width: 90%;
+          padding-bottom: 40px;
+        }
+        .col-md-12.col-sm-12 {
+          padding: 0;
+        }
+        .form-row {
+          .col-sm-12 {
+            padding: 0 5px;
+          }
+          .font-size-20 {
+            font-size: 16px;
+          }
+          .form-control.input-link.form-style.font-size-25 {
+            padding-left: 50px;
+          }
+        }
+        .form-row .form-style {
+          height: 60px;
+        }
+
+      }
+    }
+    .consultation-sec {
+      padding: 50px 40px;
+      .display-full {
+        display: none !important;
+      }
+      .display-mobile {
+        display: block !important;
+      }
+      .heading {
+        line-height: 2rem;
+        font-size: 32px;
+        text-align: left;
+      }
+      .col-md-6.top-padding-50 {
+        padding-bottom: 30px;
+      }
+      .col-md-6.top-padding-50 .font-size-25 {
+        font-size: 18px;
+        text-align: left;
+      }
+      .display-mobile {
+        .col-sm-10.m-auto {
+          padding: 0;
+        }
+        .form-control {
+          padding: .375rem 1rem !important;
+        }
+        .form-style-2 {
+          font-size: 17px;
+          height: 55px;
+        }
+        .comment {
+          height: 115px !important;
+          padding-top: 20px !important;
+        }
+        .form-btn-style-2 {
+          padding: 0;
+        }
+        .check-kits {
+          padding: 0;
+        }
+        .kits {
+          font-size: 16px;
+        }
+        ul li {
+          font-size: 18px;
+        }
+        ul li, p {
+          text-align: left;
+        }
+        .bolded-font-size-25 {
+          font-size: 32px !important;
+        }
+        .what-you-get {
+          margin: auto;
+        }
+      }
+      .left-padding-30.top-padding-100.bottom-padding-160 {
+        padding-bottom: 0 !important;
+      }
+    }
+    .web-mob-app-sec-title.display-mobile {
+      text-align: left;
+      padding: 0 40px 90px 40px;
+    }
+    .web-mob-app-sec {
+      height: 410px;
+
+      .display-mobile {
+        display: block !important;
+      }
+      .display-mobile-2 {
+        display: block !important;
+      }
+      .display-full {
+        display: none !important;
+      }
+      .mobile.display-full {
+        display: none;
+      }
+      .mobile.display-mobile-2 {
+        top: 92%;
+      }
+      .web-mob-app-sec-txt.display-mobile {
+        width: 200px;
+        height: 410px;
+        .col-md-12.position-absolute {
+          top: 82%;
+          left: 44%;
+        }
+        p {
+          margin-bottom: 16px !important;
+          font-size: 18px;
+          color: #fff;
+        }
+        p:nth-child(2) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .project-group-sec {
+      padding: 300px 40px 50px 40px;
+      .display-mobile {
+        display: block;
+        .title {
+          font-size: 18px;
+          font-family: $font-din-light;
+        }
+      }
+      .col-md-6 {
+        padding: 20px 15px !important;
+      }
+      .col-md-6.even, .col-md-6.odd {
+        background: #fff;
+      }
+      .title2 {
+        max-width: 65%;
+      }
+      .text {
+        padding-top: 50px;
+      }
+    }
+
   }
 }
 
